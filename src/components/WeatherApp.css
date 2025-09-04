@@ -10,7 +10,9 @@
 
 /* Light Mode */
 .main.light {
-  background-image : url("./src/assets/Light.jpg");
+  background-image : url("@/assets/Light.jpg");
+  background-size: cover;
+  background-position: center;
   color: #333;
 }
 

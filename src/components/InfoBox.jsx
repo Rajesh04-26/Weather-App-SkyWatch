@@ -7,13 +7,13 @@ import CardActionArea from '@mui/material/CardActionArea';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import SunnyIcon from '@mui/icons-material/Sunny';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
+import HOT_IMG from '../assets/Hot.jpg';
+import COLD_IMG from '../assets/Cold.jpg';
+import RAIN_IMG from '../assets/Rain.jpg';
+
 
 export default function InfoBox({ info }) {
-    
-    let HOT_URL = "./src/assets/Hot.jpg";
-    let COLD_URL = "./src/assets/Cold.jpg";
-    let RAIN_URL = "./src/assets/Rain.jpg";
-
+  
     return (
      <div className="info-box">
         <div className='card'>
@@ -24,10 +24,10 @@ export default function InfoBox({ info }) {
           height="220"
           image={
             info.humidity > 80 
-            ? RAIN_URL
+            ? RAIN_IMG
             : info.temp > 15
-            ? HOT_URL 
-            : COLD_URL
+            ? HOT_IMG 
+            : COLD_IMG
           }
           alt="Weather Img"
         />
