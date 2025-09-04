@@ -1,0 +1,126 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Light Mode */
+.main.light {
+  background-image : url("./src/assets/Light.jpg");
+  color: #333;
+}
+
+/* Dark Mode */
+.main.dark {
+  background: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  font-size: 1.05rem;
+  backdrop-filter: blur(4px);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 15px 30px; 
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 2rem;
+  margin: 0;
+  text-align: left;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 16px;
+  margin: 15px 0 20px;
+  opacity: 0.85;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Search Box */
+.search-box {
+  margin: 0 auto;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* InfoBox styling */
+.info-box .card {
+  margin: 20px auto;
+  max-width: 400px;
+  height: 480px; 
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main.dark .info-box .card {
+  background: rgba(0, 0, 0, 0.6); 
+  color: #ffffff;
+}
+
+.info-box .card:hover {
+  transform: translateY(-5px);
+  border: 2px solid black;
+}
+
+/* Dark mode - SearchBox styles */
+.main.dark .search-box input {
+  color: white;                
+}
+
+.main.dark .search-box label {
+  color: rgba(255, 255, 255, 0.8); 
+}
+
+.main.dark .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.6); 
+}
+
+.main.dark .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #fff; 
+}
+
+.main.dark .MuiButton-contained {
+  background-color: rgba(255, 255, 255, 0.2); 
+  color: white; 
+}
+
+.main.dark .MuiButton-contained:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Light mode - InfoBox text section */
+.main.light .info-box .card .MuiCardContent-root {
+  background: rgba(222, 247, 251, 0.79);   
+  color: black;                                    
+  border-radius: 0 0 16px 16px;     
+}
+
+.main.light .info-box .card .MuiTypography-root,
+.main.light .info-box .card p {
+  color: black !important;
+}

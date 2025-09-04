@@ -1,0 +1,34 @@
+footer {
+  width: 100%;
+  background-color: rgba(49, 49, 49, 0.95);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;      
+  padding: 10px 0;
+  border: none;    
+}
+
+.main.light footer {
+  background: rgba(0, 0, 0, 0.6); 
+  color: white;
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+footer .social-icons a {
+  color: inherit;
+  font-size: 26px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffd700;
+}
