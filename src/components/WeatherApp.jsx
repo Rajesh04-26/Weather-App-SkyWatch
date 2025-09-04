@@ -17,7 +17,7 @@ export default function WeatherApp() {
     weather: "overcast clouds",
   });
 
-  const [darkMode, setDarkMode] = useState(true); 
+  const [darkMode, setDarkMode] = useState(false); 
 
   let updateInfo = (newInfo) => {
     setWeatherInfo(newInfo);
