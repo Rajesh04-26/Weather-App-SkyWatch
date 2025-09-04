@@ -7,10 +7,10 @@ export default function Footer() {
         <footer>
         <p>Thanks for visiting my app ~ <b>@Rajesh</b></p>
         <div className="social-icons">
-          <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Rajesh04-26" target="_blank" rel="noopener noreferrer">
             <GitHubIcon />
           </a>
-          <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">
+          <a href="www.linkedin.com/in/rajesh-kumar-singh-1549112b9" target="_blank" rel="noopener noreferrer">
             <LinkedInIcon />
           </a>
         </div>
